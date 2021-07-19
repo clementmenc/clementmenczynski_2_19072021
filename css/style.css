@@ -47,8 +47,6 @@
         padding: 0 15px;
     }
 
-    .nav-bar{ height: 100%; }
-
     .nav-bar__links{ gap: 20px; }
 
     .nav-bar__links__item{
@@ -60,6 +58,5 @@
     }
 
     .nav-bar__links__item.is-active{ color: var(--blue); border-top: 2px solid var(--blue); }
-    
-    .nav-bar__links__item a{  display: block; }
+
 }
