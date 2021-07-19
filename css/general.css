@@ -1,0 +1,55 @@
+/* -------------------------------------------------- *\
+    Import Fonts
+\* -------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* -------------------------------------------------- *\
+    Variables
+\* -------------------------------------------------- */
+
+:root{
+    --blue: #0065FC;
+    --lightBlue: #DEEBFF;
+    --grey: #F2F2F2;
+    --darkGrey: #DBDBDB;
+    --white: #FFF;
+    --black: #000;
+}
+
+/* -------------------------------------------------- *\
+    General style
+\* -------------------------------------------------- */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: var(--balck);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1, h2{
+    font-weight: 700;
+    font-size: 1.35rem;
+}
+
+p{
+    line-height: 1.1rem;
+}
