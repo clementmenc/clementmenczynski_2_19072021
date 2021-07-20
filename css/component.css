@@ -1,0 +1,66 @@
+/* -------------------------------------------------- *\
+    Filter button
+\* -------------------------------------------------- */
+
+.btn-filter{
+    position: relative;
+    padding: 15px;
+    padding-left: 62px;
+    background-color: var(--white);
+
+    border: 2px solid var(--darkGrey);
+    border-radius: 27px;
+
+    font-weight: 700;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.btn-filter__icon{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--blue);
+
+    z-index: 3;
+    transition: color .3s ease;
+}
+
+.btn-filter::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 53px;
+    height: 53px;
+    background-color: var(--lightBlue);
+
+    border-radius: 27px;
+
+    z-index: 1;
+    transition: width .3s ease, transform .3s ease;
+}
+
+.btn-filter .btn-filter__label{ position: relative; z-index: 2; transition: color .3s ease; }
+
+@media (hover: hover){
+    .btn-filter:hover::before{
+        width: calc(100% - 43px);
+        transform: translate3d(47px, 0, 0);
+    }
+
+    .btn-filter:hover .btn-filter__icon{
+        color: var(--black);
+    }
+
+    .btn-filter:hover .btn-filter__label{
+        color: var(--blue);
+    }
+}
