@@ -42,9 +42,7 @@
         "logo . nav register";
         gap: 20px;
         height: 115px;
-        max-width: 1340px;
-        margin: 0 auto;
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     .nav-bar__links{ gap: 20px; }
@@ -153,4 +151,49 @@
     
     color: var(--blue);
     font-size: .8rem;
+}
+
+/* -------------------------------------------------- *\
+    Accommodation section
+\* -------------------------------------------------- */
+
+.most-popular, .accommodation-found{ padding: 40px 20px; }
+
+.most-popular{ background-color: var(--grey); }
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.cards-sm-container{ display: flex; flex-direction: column; gap: 10px; }
+
+.card-item{ max-width: 100%; }
+
+
+@media screen and (min-width: 570px){
+    .cards-container{ justify-content: space-around; gap: 30px; }
+}
+
+@media screen and (min-width: 1000px){
+    .accommodation-container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+
+    .cards-container{ gap: 25px; }
+
+    .cards-sm-container{ gap: 30px; }
+
+    .most-popular, .accommodation-found{ padding: 40px;  border-radius: 20px;}
+
+    .most-popular{ min-width: 340px; align-self: flex-start; }
+
+    .accommodation-found{ flex-grow: 1; background-color: var(--grey); }
+
+
 }

@@ -21,6 +21,16 @@
     General style
 \* -------------------------------------------------- */
 
+html {
+    scroll-behavior: smooth;
+}
+  
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -56,14 +66,20 @@ p{
     margin: 0;
 }
 
+.star{ color: var(--grey); }
+
+.star--colored{ color: var(--blue); }
+
 /* -------------------------------------------------- *\
     MEDIA QUERIES
 \* -------------------------------------------------- */
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1000px){
     .l-header, .l-main{
         max-width: 1340px;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 0 20px;
     }
+
+    .l-main .search-sec{ margin-left: 0; margin-right: 0; }
 }
