@@ -230,8 +230,14 @@
         "port fort calanques notreDame"
         "port fort calanques longchamp"
         "port frioul calanques longchamp";
-        max-width: calc(100% - 120px);
+        width: calc(100% - 120px);
         height: 400px;
+        column-gap: 40px;
+        row-gap: 0;
+    }
+
+    .cards-activities-container .card-item{
+        padding: 20px 0;
     }
 
     .cards-activities-container .card-item:nth-child(1){
@@ -253,4 +259,38 @@
         grid-area: longchamp;
     }
 
+}
+
+/* -------------------------------------------------- *\
+    Footer
+\* -------------------------------------------------- */
+
+.l-footer{
+    background-color: var(--grey);
+    margin-top: 40px;
+    padding: 40px 20px;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (min-width: 700px){
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+        max-width: 1340px;
+        margin: 0 auto;
+    }
 }
