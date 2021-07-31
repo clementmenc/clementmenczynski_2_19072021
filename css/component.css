@@ -6,10 +6,10 @@
     position: relative;
     padding: 15px;
     padding-left: 62px;
-    background-color: var(--white);
+    background-color: #FFF;
     height: 53px;
 
-    border: 2px solid var(--darkGrey);
+    border: 2px solid #DBDBDB;
     border-radius: 27px;
 
     font-weight: 700;
@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
 
-    color: var(--blue);
+    color: #0065FC;
 
     z-index: 3;
     transition: color .3s ease;
@@ -41,7 +41,7 @@
     left: -2px;
     width: 53px;
     height: 53px;
-    background-color: var(--lightBlue);
+    background-color: #DEEBFF;
 
     border-radius: 27px;
 
@@ -54,9 +54,9 @@
 @media (hover: hover){
     .btn-filter:hover::before{ width: calc(100% - 43px); transform: translate3d(47px, 0, 0); }
 
-    .btn-filter:hover .btn-filter__icon{ color: var(--black); }
+    .btn-filter:hover .btn-filter__icon{ color: #000; }
 
-    .btn-filter:hover{ color: var(--blue); }
+    .btn-filter:hover{ color: #0065FC; }
 }
 
 /* -------------------------------------------------- *\
@@ -87,11 +87,11 @@
     flex-direction: column;
     max-width: 485px;
     height: 190px;
-    background-color: var(--white);
+    background-color: #FFF;
+    padding: 5px;
     overflow: hidden;
 
     border-radius: 20px;
-    border: 5px solid var(--white);
     box-shadow: 0px 5px 20px 0px rgba(0,0,0, .1);
     transition: box-shadow .3s ease;
 }
@@ -102,6 +102,7 @@
     align-items: center;
     overflow: hidden;
     min-height: 115px;
+    border-radius: 20px 20px 0 0;
 }
 
 .card__img img{ min-width: 100%; min-height: 100%; object-fit: cover; }
@@ -113,7 +114,7 @@
     flex-direction: column;
     gap: 5px;
     max-height: 75px;
-    background-color: var(--white);
+    background-color: #FFF;
     padding: 10px 10px 0 10px;
 
 }
@@ -140,7 +141,7 @@
 
 .card.card-sm{ flex-direction: row; height: 135px; max-width: none; }
 
-.card-sm .card__img{ max-width: 128px; max-height: 135px; }
+.card-sm .card__img{ max-width: 128px; max-height: 135px; border-radius: 20px 0 0 20px; }
 
 .card-sm .card__infos{ max-height: 100%; padding: 15px 20px; }
 
@@ -149,7 +150,7 @@
 .card-sm .card__infos__price{ flex-grow: 1; }
 
 @media screen and (min-width: 620px){
-    .card-sm .card__img{ max-width: 50%; }
+    .card-sm .card__img{ max-width: 45%; }
 }
 
 @media screen and (min-width: 1095px){
